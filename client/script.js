@@ -68,7 +68,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   // fetch data
-  const response = await fetch("https://md-black-code.onrender.com", {
+  const response = await fetch("https://openai-backend.cyclic.app", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
