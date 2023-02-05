@@ -1,5 +1,6 @@
 import bot from "./assets/bot.svg";
 import user from "./assets/user.svg";
+import copy from "copy-to-clipboard";
 
 const form = document.querySelector("form");
 const chatCOntainer = document.querySelector("#chat_container");
@@ -25,6 +26,8 @@ function typeText(element, text) {
       clearInterval(interval);
     }
   }, 20);
+  
+  copy(text);
 }
 
 function generateUniqueId() {
